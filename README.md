@@ -280,3 +280,27 @@ Demo 中的 PartialRexxarViewController 给出了一个示例。
 ## License
 
 The MIT license.
+
+
+
+
+
+
+
+学习笔记
+数据交互笔记  
+RXRRequestInterceptor startLoading  -> - (NSMutableURLRequest *)_rxr_decorateRequest:(NSURLRequest *)request  网络请求url.  -?+ (BOOL)canInitWithRequest:(NSURLRequest *)request找到对应的处理器 responseData 再调responseWithRequest
+
+
+
+一些原生的响应
+- (void)webView:(WKWebView *)webView decidePolicyForNavigationAction:(WKNavigationAction *)navigationAction decisionHandler:(void (^)(WKNavigationActionPolicy))decisionHandler
+栏截请求
+- (BOOL)webView:(WKWebView *)webView
+    shouldStartLoadWithRequest:(NSURLRequest *)request
+    navigationType:(WKNavigationType)navigationType{
+ 
+}
+
+
+
